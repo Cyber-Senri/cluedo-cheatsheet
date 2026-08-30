@@ -1,23 +1,38 @@
+body
+{
+    margin: 0;
+}
+
+#Cluedo
+{
+    padding: 20px;
+    background-color: #c3c3c3;
+}
+
 .players
 {
     display: flex;
-    margin: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 10px;
 }
 
 .players .red, .players .yellow, .players .white,
 .players .green, .players .blue, .players .purple
 {
     padding: 8px;
+    width: 100%;
 }
 
 table
 {
     background-color: #f6f6f6;
-    margin: 20px;
     overflow: hidden;
     border-radius: 10px;
     border-collapse: collapse;
     border: none;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 th
