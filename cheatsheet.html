@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta id="viewport" content="width=device-width, initial-scale=1">
+        <link href="cluedo.css" rel="stylesheet"/>
+        <title>Cluedo Cheat Sheet</title>
+    </head>
+    <body>
+        <div id="Cluedo">
+            <div class="players">
+                <div class="red">
+                    <label for="floga">Φλόγα</label>
+                    <input type="checkbox" id="floga" data-player="red" onchange="togglePlayer(this)" checked>
+                </div>
+
+                <div class="yellow">
+                    <label for="moustardas">Μουστάρδας</label>
+                    <input type="checkbox" id="moustardas" data-player="yel" onchange="togglePlayer(this)" checked>
+                </div>
+
+                <div class="white">
+                    <label for="leuki">Λευκή</label>
+                    <input type="checkbox" id="leuki" data-player="whi" onchange="togglePlayer(this)" checked>
+                </div>
+
+                <div class="green">
+                    <label for="prasinos">Πράσινος</label>
+                    <input type="checkbox" id="prasinos" data-player="gre" onchange="togglePlayer(this)" checked>
+                </div>
+
+                <div class="blue">
+                    <label for="pagoni">Παγώνη</label>
+                    <input type="checkbox" id="pagoni" data-player="blu" onchange="togglePlayer(this)" checked>
+                </div>
+
+                <div class="purple">
+                    <label for="damaskinos">Δαμάσκινος</label>
+                    <input type="checkbox" id="damaskinos" data-player="pur" onchange="togglePlayer(this)" checked>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="people">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th class="red player-red">Φλόγα</th>
+                                <th class="yellow player-yel">Μουστάρδας</th>
+                                <th class="white player-whi">Λευκή</th>
+                                <th class="green player-gre">Πράσινος</th>
+                                <th class="blue player-blu">Παγώνη</th>
+                                <th class="purple player-pur">Δαμάσκινος</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr id="floga">
+                                <td>ΦΛΟΓΑ</td>
+                                <td class="marker state-0 player-red"></td>
+                                <td class="marker state-0 player-yel"></td>
+                                <td class="marker state-0 player-whi"></td>
+                                <td class="marker state-0 player-gre"></td>
+                                <td class="marker state-0 player-blu"></td>
+                                <td class="marker state-0 player-pur"></td>
+                            </tr>
+
+                            <tr id="moustardas">
+                                <td>ΜΟΥΣΤΑΡΔΑΣ</td>
+                                <td class="marker state-0 player-red"></td>
+                                <td class="marker state-0 player-yel"></td>
+                                <td class="marker state-0 player-whi"></td>
+                                <td class="marker state-0 player-gre"></td>
+                                <td class="marker state-0 player-blu"></td>
+                                <td class="marker state-0 player-pur"></td>
+                            </tr>
+
+                            <tr id="leuki">
+                                <td>ΛΕΥΚΗ</td>
+                                <td class="marker state-0 player-red"></td>
+                                <td class="marker state-0 player-yel"></td>
+                                <td class="marker state-0 player-whi"></td>
+                                <td class="marker state-0 player-gre"></td>
+                                <td class="marker state-0 player-blu"></td>
+                                <td class="marker state-0 player-pur"></td>
+                            </tr>
+
+                            <tr id="prasinos">
+                                <td>ΠΡΑΣΙΝΟΣ</td>
+                                <td class="marker state-0 player-red"></td>
+                                <td class="marker state-0 player-yel"></td>
+                                <td class="marker state-0 player-whi"></td>
+                                <td class="marker state-0 player-gre"></td>
+                                <td class="marker state-0 player-blu"></td>
+                                <td class="marker state-0 player-pur"></td>
+                            </tr>
+
+                            <tr id="pagoni">
+                                <td>ΠΑΓΩΝΗ</td>
+                                <td class="marker state-0 player-red"></td>
+                                <td class="marker state-0 player-yel"></td>
+                                <td class="marker state-0 player-whi"></td>
+                                <td class="marker state-0 player-gre"></td>
+                                <td class="marker state-0 player-blu"></td>
+                                <td class="marker state-0 player-pur"></td>
+                            </tr>
+
+                            <tr id="damaskinos">
+                                <td>ΔΑΜΑΣΚΙΝΟΣ</td>
+                                <td class="marker state-0 player-red"></td>
+                                <td class="marker state-0 player-yel"></td>
+                                <td class="marker state-0 player-whi"></td>
+                                <td class="marker state-0 player-gre"></td>
+                                <td class="marker state-0 player-blu"></td>
+                                <td class="marker state-0 player-pur"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="places">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>
+                                <th class="red player-red">Φλόγα</th>
+                                <th class="yellow player-yel">Μουστάρδας</th>
+                                <th class="white player-whi">Λευκή</th>
+                                <th class="green player-gre">Πράσινος</th>
+                                <th class="blue player-blu">Παγώνη</th>
+                                <th class="purple player-pur">Δαμάσκινος</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr id="hall">
+                                <td>ΧΟΛ</td>
+                                <td class="marker state-0 player-red"></td>
+                                <td class="marker state-0 player-yel"></td>
+                                <td class="marker state-0 player-whi"></td>
+                                <td class="marker state-0 player-gre"></td>
+                                <td class="marker state-0 player-blu"></td>
+                                <td class="marker state-0 player-pur"></td>
+                            </tr>
+
+                            <tr id="guest">
+                                <td>ΞΕΝΩΝΑΣ</td>
+                                <td class="marker state-0 player-red"></td>
+                                <td class="marker state-0 player-yel"></td>
+                                <td class="marker state-0 player-whi"></td>
+                                <td class="marker state-0 player-gre"></td>
+                                <td class="marker state-0 player-blu"></td>
+                                <td class="marker state-0 player-pur"></td>
+                            </tr>
+
+                            <tr id="dinning">
+                                <td>ΤΡΑΠΕΖΑΡΙΑ</td>
+                                <td class="marker state-0 player-red"></td>
+                                <td class="marker state-0 player-yel"></td>
+                                <td class="marker state-0 player-whi"></td>
+                                <td class="marker state-0 player-gre"></td>
+                                <td class="marker state-0 player-blu"></td>
+                                <td class="marker state-0 player-pur"></td>
+                            </tr>
+
+                            <tr id="kitchen">
+                                <td>ΚΟΥΖΙΝΑ</td>
+                                <td class="marker state-0 player-red"></td>
+                                <td class="marker state-0 player-yel"></td>
+                                <td class="marker state-0 player-whi"></td>
+                                <td class="marker state-0 player-gre"></td>
+                                <td class="marker state-0 player-blu"></td>
+                                <td class="marker state-0 player-pur"></td>
+                            </tr>
+
+                            <tr id="balcony">
+                                <td>ΒΕΡΑΝΤΑ</td>
+                                <td class="marker state-0 player-red"></td>
+                                <td class="marker state-0 player-yel"></td>
+                                <td class="marker state-0 player-whi"></td>
+                                <td class="marker state-0 player-gre"></td>
+                                <td class="marker state-0 player-blu"></td>
+                                <td class="marker state-0 player-pur"></td>
+                            </tr>
+
+                            <tr id="spa">
+                                <td>SPA</td>
+                                <td class="marker state-0 player-red"></td>
+                                <td class="marker state-0 player-yel"></td>
+                                <td class="marker state-0 player-whi"></td>
+                                <td class="marker state-0 player-gre"></td>
+                                <td class="marker state-0 player-blu"></td>
+                                <td class="marker state-0 player-pur"></td>
+                            </tr>
+
+                            <tr id="cinema">
+                                <td>ΠΡΟΒΟΛΩΝ</td>
+                                <td class="marker state-0 player-red"></td>
+                                <td class="marker state-0 player-yel"></td>
+                                <td class="marker state-0 player-whi"></td>
+                                <td class="marker state-0 player-gre"></td>
+                                <td class="marker state-0 player-blu"></td>
+                                <td class="marker state-0 player-pur"></td>
+                            </tr>
+
+                            <tr id="living">
+                                <td>ΣΑΛΟΝΙ</td>
+                                <td class="marker state-0 player-red"></td>
+                                <td class="marker state-0 player-yel"></td>
+                                <td class="marker state-0 player-whi"></td>
+                                <td class="marker state-0 player-gre"></td>
+                                <td class="marker state-0 player-blu"></td>
+                                <td class="marker state-0 player-pur"></td>
+                            </tr>
+
+                            <tr id="observatory">
+                                <td>ΠΑΡΑΤΗΡ.</td>
+                                <td class="marker state-0 player-red"></td>
+                                <td class="marker state-0 player-yel"></td>
+                                <td class="marker state-0 player-whi"></td>
+                                <td class="marker state-0 player-gre"></td>
+                                <td class="marker state-0 player-blu"></td>
+                                <td class="marker state-0 player-pur"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="weapons">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>
+                                <th class="red player-red">Φλόγα</th>
+                                <th class="yellow player-yel">Μουστάρδας</th>
+                                <th class="white player-whi">Λευκή</th>
+                                <th class="green player-gre">Πράσινος</th>
+                                <th class="blue player-blu">Παγώνη</th>
+                                <th class="purple player-pur">Δαμάσκινος</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr id="dumbell"> 
+                                <td>ΒΑΡΑΚΙ</td>
+                                <td class="marker state-0 player-red"></td>
+                                <td class="marker state-0 player-yel"></td>
+                                <td class="marker state-0 player-whi"></td>
+                                <td class="marker state-0 player-gre"></td>
+                                <td class="marker state-0 player-blu"></td>
+                                <td class="marker state-0 player-pur"></td>
+                            </tr>
+
+                            <tr id="award">
+                                <td>ΒΡΑΒΕΙΟ</td>
+                                <td class="marker state-0 player-red"></td>
+                                <td class="marker state-0 player-yel"></td>
+                                <td class="marker state-0 player-whi"></td>
+                                <td class="marker state-0 player-gre"></td>
+                                <td class="marker state-0 player-blu"></td>
+                                <td class="marker state-0 player-pur"></td>
+                            </tr>
+
+                            <tr id="poison">
+                                <td>ΔΗΛΗΤΗΡΙΟ</td>
+                                <td class="marker state-0 player-red"></td>
+                                <td class="marker state-0 player-yel"></td>
+                                <td class="marker state-0 player-whi"></td>
+                                <td class="marker state-0 player-gre"></td>
+                                <td class="marker state-0 player-blu"></td>
+                                <td class="marker state-0 player-pur"></td>
+                            </tr>
+
+                            <tr id="knife">
+                                <td>ΜΑΧΑΙΡΙ</td>
+                                <td class="marker state-0 player-red"></td>
+                                <td class="marker state-0 player-yel"></td>
+                                <td class="marker state-0 player-whi"></td>
+                                <td class="marker state-0 player-gre"></td>
+                                <td class="marker state-0 player-blu"></td>
+                                <td class="marker state-0 player-pur"></td>
+                            </tr>
+
+                            <tr id="pistol">
+                                <td>ΠΙΣΤΟΛΙ</td>
+                                <td class="marker state-0 player-red"></td>
+                                <td class="marker state-0 player-yel"></td>
+                                <td class="marker state-0 player-whi"></td>
+                                <td class="marker state-0 player-gre"></td>
+                                <td class="marker state-0 player-blu"></td>
+                                <td class="marker state-0 player-pur"></td>
+                            </tr>
+
+                            <tr id="bat">
+                                <td>ΡΟΠΑΛΟ</td>
+                                <td class="marker state-0 player-red"></td>
+                                <td class="marker state-0 player-yel"></td>
+                                <td class="marker state-0 player-whi"></td>
+                                <td class="marker state-0 player-gre"></td>
+                                <td class="marker state-0 player-blu"></td>
+                                <td class="marker state-0 player-pur"></td>
+                            </tr>
+
+                            <tr id="rope">
+                                <td>ΣΧΟΙΝΙ</td>
+                                <td class="marker state-0 player-red"></td>
+                                <td class="marker state-0 player-yel"></td>
+                                <td class="marker state-0 player-whi"></td>
+                                <td class="marker state-0 player-gre"></td>
+                                <td class="marker state-0 player-blu"></td>
+                                <td class="marker state-0 player-pur"></td>
+                            </tr>
+
+                            <tr id="axe">
+                                <td>ΤΣΕΚΟΥΡΙ</td>
+                                <td class="marker state-0 player-red"></td>
+                                <td class="marker state-0 player-yel"></td>
+                                <td class="marker state-0 player-whi"></td>
+                                <td class="marker state-0 player-gre"></td>
+                                <td class="marker state-0 player-blu"></td>
+                                <td class="marker state-0 player-pur"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function togglePlayer(checkbox)
+            {
+                const player = checkbox.dataset.player;
+                const elements = document.querySelectorAll(".player-" + player);
+
+                elements.forEach(element =>
+                {
+                    element.style.display = checkbox.checked ? "" : "none";
+                });
+            }
+
+
+            // Cycle through the four states when a cell is clicked.
+            document.querySelectorAll(".marker").forEach(cell =>
+            {
+                cell.addEventListener("click", () =>
+                {
+
+                    // Find the current state
+                    let currentState = 0;
+
+                    for (let i = 0; i < 4; i++)
+                    {
+                        if (cell.classList.contains(`state-${i}`))
+                        {
+                            currentState = i;
+                            break;
+                        }
+                    }
+
+                    // Move to the next state
+                    const nextState = (currentState + 1) % 4;
+
+                    // Remove the old state
+                    cell.classList.remove(
+                        "state-0",
+                        "state-1",
+                        "state-2",
+                        "state-3"
+                    );
+
+                    // Add the new state
+                    cell.classList.add(`state-${nextState}`);
+                });
+            });
+        </script>
+
+    </body>
+</html>
