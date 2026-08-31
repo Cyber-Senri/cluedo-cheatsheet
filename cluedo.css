@@ -67,7 +67,6 @@ tr
     background-color: unset;
     color: #000;
     font-weight: normal;
-    text-decoration: none;
 }
 
 tr:last-child
@@ -142,7 +141,6 @@ tr:has(.state-1)
     background-color: #fff3a3;
     color: #000;
     font-weight: normal;
-    text-decoration: dashed;
 }
 
 tr:has(.state-2)
@@ -150,7 +148,6 @@ tr:has(.state-2)
     background-color: #959595;
     color: #777777;
     font-weight: normal;
-    text-decoration: line-through;
 
 }
 
@@ -159,5 +156,4 @@ tr:has(.state-3)
     background-color: #a9ffa3;
     color: #009a29;
     font-weight: bold;
-    text-decoration: none;
 }
