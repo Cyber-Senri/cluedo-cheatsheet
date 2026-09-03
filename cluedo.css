@@ -30,6 +30,7 @@ body
 .players .green, .players .blue, .players .purple
 {
     padding: 8px;
+    width: 100%;
 }
 
 table
