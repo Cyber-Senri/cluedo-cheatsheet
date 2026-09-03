@@ -49,7 +49,7 @@
                                 <th class="red player-red">Φλόγα</th>
                                 <th class="yellow player-yel">Μουστάρ.</th>
                                 <th class="white player-whi">Λευκή</th>
-                                <th class="green player-gre">Πράσινος</th>
+                                <th class="green player-gre">Πράσιν.</th>
                                 <th class="blue player-blu">Παγώνη</th>
                                 <th class="purple player-pur">Δαμάσκ.</th>
                             </tr>
@@ -126,7 +126,7 @@
                                 <th class="red player-red">Φλόγα</th>
                                 <th class="yellow player-yel">Μουστάρ.</th>
                                 <th class="white player-whi">Λευκή</th>
-                                <th class="green player-gre">Πράσινος</th>
+                                <th class="green player-gre">Πράσιν.</th>
                                 <th class="blue player-blu">Παγώνη</th>
                                 <th class="purple player-pur">Δαμάσκ.</th>
                             </tr>
@@ -233,7 +233,7 @@
                                 <th class="red player-red">Φλόγα</th>
                                 <th class="yellow player-yel">Μουστάρ.</th>
                                 <th class="white player-whi">Λευκή</th>
-                                <th class="green player-gre">Πράσινος</th>
+                                <th class="green player-gre">Πράσιν.</th>
                                 <th class="blue player-blu">Παγώνη</th>
                                 <th class="purple player-pur">Δαμάσκ.</th>
                             </tr>
@@ -370,6 +370,23 @@
                     cell.classList.add(`state-${nextState}`);
                 });
             });
+        </script>
+
+        <script>
+            const people_tbody = document.querySelector('.people tbody');
+            const people_rows = Array.from(people_tbody.querySelectorAll('tr'));
+            people_rows.sort(() => Math.random() - 0.5);
+            people_rows.forEach(row => people_tbody.appendChild(row));
+            
+            const places_tbody = document.querySelector('.places tbody');
+            const places_rows = Array.from(places_tbody.querySelectorAll('tr'));
+            places_rows.sort(() => Math.random() - 0.5);
+            places_rows.forEach(row => places_tbody.appendChild(row));
+
+            const weapons_tbody = document.querySelector('.weapons tbody');
+            const weapons_rows = Array.from(weapons_tbody.querySelectorAll('tr'));
+            weapons_rows.sort(() => Math.random() - 0.5);
+            weapons_rows.forEach(row => weapons_tbody.appendChild(row));
         </script>
 
     </body>
