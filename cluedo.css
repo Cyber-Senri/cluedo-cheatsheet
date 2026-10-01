@@ -16,7 +16,8 @@ body
     display: flex;
     margin-bottom: 20px;
     overflow: hidden;
-    border-radius: 10px;
+    border: #aa851e groove 8px;
+    border-radius: 18px;
     font-size: 25px;
     text-align: center;
 }
@@ -43,21 +44,30 @@ body
     width: 100%;
 }
 
+.people, .places, .weapons
+{
+    border: #aa851e groove 8px;
+    border-radius: 18px;
+    overflow: hidden;
+    margin: 40px 0;
+}
+
 table
 {
     background-color: rgba(127, 76, 44, 0.3);
-    overflow: hidden;
-    border-radius: 10px;
     border-collapse: collapse;
-    border: none;
     width: 100%;
-    margin: 40px 0;
 }
 
 th
 {
-    padding: 5px 15px;
+    padding: 15px 15px 30px 15px;
     font-size: 25px;
+}
+
+th:first-child
+{
+    background: linear-gradient(0deg, transparent, rgba(127, 76, 44, 0.4));
 }
 
 td
@@ -87,44 +97,74 @@ tr:last-child
 
 .red
 {
-    background-color: #9a0000;
+    background-color: rgba(255, 0, 0, 0.4);
     color: #fff;
     font-weight: bold;
+}
+
+th.red
+{
+    background: linear-gradient(0deg, transparent, rgba(255, 0, 0, 0.4));
 }
 
 .yellow
 {
-    background-color: #a26c00;
+    background-color: rgba(255, 170, 0, 0.4);
     color: #fff;
     font-weight: bold;
+}
+
+th.yellow
+{
+    background: linear-gradient(0deg, transparent, rgba(255, 170, 0, 0.4));
 }
 
 .white
 {
-    background-color: #ece8e6;
-    color: #000;
+    background-color: rgba(255, 250, 247, 0.5);
+    color: #fff;
     font-weight: bold;
+}
+
+th.white
+{
+    background: linear-gradient(0deg, transparent, rgba(255, 250, 247, 0.4));
 }
 
 .green
 {
-    background-color: #00671b;
+    background-color: rgba(0, 198, 53, 0.4);
     color: #fff;
     font-weight: bold;
+}
+
+th.green
+{
+    background: linear-gradient(0deg, transparent, rgba(0, 198, 53, 0.4));
 }
 
 .blue
 {
-    background-color: #003994;
+    background-color: rgba(0, 98, 255, 0.4);
     color: #fff;
     font-weight: bold;
 }
 
+th.blue
+{
+    background: linear-gradient(0deg, transparent, rgba(0, 98, 255, 0.4));
+}
+
 .purple
 {
-    background-color: #680091;
+    background-color: rgba(183, 0, 255, 0.4);
     color: #fff;
     font-weight: bold;
+}
+
+th.purple
+{
+    background: linear-gradient(0deg, transparent, rgba(183, 0, 255, 0.4));
 }
 
 .state-0::after
