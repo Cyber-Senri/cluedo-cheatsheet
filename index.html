@@ -15,7 +15,7 @@
                 </div>
 
                 <div class="yellow">
-                    <label for="moustardas">Μουστάρ.</label>
+                    <label for="moustardas">Μουστάρδας</label>
                     <input type="checkbox" id="moustardas" data-player="yel" onchange="togglePlayer(this)" checked>
                 </div>
 
@@ -25,7 +25,7 @@
                 </div>
 
                 <div class="green">
-                    <label for="prasinos">Πράσιν.</label>
+                    <label for="prasinos">Πράσινος</label>
                     <input type="checkbox" id="prasinos" data-player="gre" onchange="togglePlayer(this)" checked>
                 </div>
 
@@ -35,7 +35,7 @@
                 </div>
 
                 <div class="purple">
-                    <label for="damaskinos">Δαμάσκ.</label>
+                    <label for="damaskinos">Δαμάσκινος</label>
                     <input type="checkbox" id="damaskinos" data-player="pur" onchange="togglePlayer(this)" checked>
                 </div>
             </div>
@@ -356,7 +356,7 @@
                     // Find the current state
                     let currentState = 0;
 
-                    for (let i = 0; i < 4; i++)
+                    for (let i = 0; i < 5; i++)
                     {
                         if (cell.classList.contains(`state-${i}`))
                         {
@@ -366,14 +366,15 @@
                     }
 
                     // Move to the next state
-                    const nextState = (currentState + 1) % 4;
+                    const nextState = (currentState + 1) % 5;
 
                     // Remove the old state
                     cell.classList.remove(
                         "state-0",
                         "state-1",
                         "state-2",
-                        "state-3"
+                        "state-3",
+                        "state-4"
                     );
 
                     // Add the new state

@@ -19,6 +19,14 @@ body
     text-align: center;
 }
 
+.players label
+{
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .players input[type="checkbox"]
 {
     margin-top: 10px;
@@ -119,22 +127,35 @@ tr:last-child
 
 .state-0::after
 {
-    content: "◻️"; /* ⬜◻️🔳 */
+    content: "◻️";
 }
 
 .state-1::after
 {
-    content: "❓";
+    content: "?"; /*❓*/
+    font-weight: bold;
+    color:#a38d00;
 }
 
 .state-2::after
 {
-    content: "✔️";
+    content: "✓"; /*✔️*/
+    font-weight: bold;
+    color:#4d4d4d;
 }
 
 .state-3::after
 {
-    content: "✴️";
+    content: "✕"; /*❌*/
+    font-weight: bold;
+    color:#b90606;
+}
+
+.state-4::after
+{
+    content: "✦"; /*✳️*/
+    font-weight: bold;
+    color:#009a29;
 }
 
 tr:has(.state-1)
@@ -147,12 +168,11 @@ tr:has(.state-1)
 tr:has(.state-2)
 {
     background-color: #959595;
-    color: #777777;
+    color: #4d4d4d;
     font-weight: normal;
-
 }
 
-tr:has(.state-3)
+tr:has(.state-4)
 {
     background-color: #a9ffa3;
     color: #009a29;
