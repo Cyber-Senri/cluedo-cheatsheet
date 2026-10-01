@@ -179,7 +179,7 @@ th.purple
 .state-1::after
 {
     content: "?"; /*❓*/
-    font-weight: bold;
+    font-weight: normal;
     color:#ffe224;
 }
 
@@ -200,7 +200,7 @@ th.purple
 .state-4::after
 {
     content: "✦"; /*✳️*/
-    font-weight: bold;
+    font-weight: normal;
     color:#66ff4e;
 }
 
