@@ -1,7 +1,9 @@
 body
 {
     margin: 0;
-    background-color: #c3c3c3;
+    background-color: #301301;
+    background: url("assets/wood-texture.jpg");
+    background-repeat: repeat-y;
 }
 
 #Cluedo
@@ -43,13 +45,13 @@ body
 
 table
 {
-    background-color: #f6f6f6;
+    background-color: rgba(127, 76, 44, 0.3);
     overflow: hidden;
     border-radius: 10px;
     border-collapse: collapse;
     border: none;
     width: 100%;
-    margin-bottom: 20px;
+    margin: 40px 0;
 }
 
 th
@@ -72,10 +74,10 @@ td.marker
 
 tr
 {
-    border-bottom: 1px solid #ece8e6;
+    border-bottom: 2px solid #230e00;
     background-color: unset;
-    color: #000;
-    font-weight: normal;
+    color: #d4b4a1;
+    font-weight: 500;
 }
 
 tr:last-child
@@ -134,47 +136,47 @@ tr:last-child
 {
     content: "?"; /*❓*/
     font-weight: bold;
-    color:#a38d00;
+    color:#ffe224;
 }
 
 .state-2::after
 {
     content: "✓"; /*✔️*/
     font-weight: bold;
-    color:#4d4d4d;
+    color:#888888;
 }
 
 .state-3::after
 {
     content: "✕"; /*❌*/
     font-weight: bold;
-    color:#b90606;
+    color:#ff0000;
 }
 
 .state-4::after
 {
     content: "✦"; /*✳️*/
     font-weight: bold;
-    color:#009a29;
+    color:#66ff4e;
 }
 
 tr:has(.state-1)
 {
-    background-color: #fff3a3;
-    color: #000;
+    background-color: rgba(255, 221, 0, 0.2);
+    color: #d9bc00;
     font-weight: normal;
 }
 
 tr:has(.state-2)
 {
-    background-color: #959595;
-    color: #4d4d4d;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #888888;
     font-weight: normal;
 }
 
 tr:has(.state-4)
 {
-    background-color: #a9ffa3;
-    color: #009a29;
+    background-color: rgba(17, 255, 0, 0.2);
+    color: #66ff4e;
     font-weight: bold;
 }
