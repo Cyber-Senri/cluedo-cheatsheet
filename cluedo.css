@@ -54,7 +54,7 @@ body
 
 table
 {
-    background-color: rgba(127, 76, 44, 0.3);
+    background-color: rgba(127, 76, 44, 0.25);
     border-collapse: collapse;
     width: 100%;
 }
@@ -86,8 +86,12 @@ tr
 {
     border-bottom: 2px solid #230e00;
     background-color: unset;
-    color: #d4b4a1;
-    font-weight: 500;
+    color: #dccca0;
+}
+
+tr td:first-child
+{
+    font-weight: 600;
 }
 
 tr:last-child
@@ -169,7 +173,7 @@ th.purple
 
 .state-0::after
 {
-    content: "◻️";
+    content: "▢"; /*◻️*/
 }
 
 .state-1::after
